@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagens/livro.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center 20%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    font-family: 'sixtyfour', sans-serif;
+    top: 20px;
+    left: 20px;
+    text-shadow: 1px 2px 5px #ffffff32;
+}
+
+.container {
+    background-color: #00000052;
+    padding: 20px;
+    border-radius: 0 50px;
+    width: 350px;
+    box-shadow: 5px 5px 20px #ffffff32;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 40px 0;
+    font-size: 30px;
+}
+
+.input-field { 
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(18px);
+    transition: .2s ease-in-out;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    margin-bottom: 40px;
+    padding-left: 2px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: .1s ease-in-out;
+}
+
+input:focus {
+    border-bottom: 2px solid #fff;
+    
+}
+
+input:focus + label {
+    transform: translateY(-18px) scale(.9);
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+input:not(:placeholder-shown) + label {
+    transform: translateY(-18px) scale(.9);
+}
+
+.form-button {
+    text-align: center;
+}
+
+button {
+    margin: 15px 40px;
+    padding: 15px 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff32;
+    font-weight: bold;
+}
+
+p {
+    text-align: right;
+    margin: 5px;
+}
+
+a {
+    font-size: .8em;
+    color: #fff;
+    text-decoration: none;  
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+
